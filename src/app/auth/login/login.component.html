@@ -1,4 +1,11 @@
 <h2>Login</h2>
-<input type="email" [(ngModel)]="email" placeholder="Digite seu email">
-<input type="password" [(ngModel)]="password" placeholder="Digite sua senha">
-<button (click)="login()">Entrar</button>
+<p-floatLabel>
+  <input id="username" type="text" pInputText [(ngModel)]="login" />
+  <label for="username">Username</label>
+</p-floatLabel>
+
+<p-floatLabel>
+  <input id="password" type="password" pInputText [(ngModel)]="password" />
+  <label for="password">Password</label>
+</p-floatLabel>
+<p-button label="Entrar" icon="pi pi-check" (click)="login()"></p-button>
